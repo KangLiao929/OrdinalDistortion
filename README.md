@@ -3,6 +3,7 @@
 This is the official implementation for [OrdinalDistortion](https://arxiv.org/abs/2007.10689) (IEEE TIP'21).
 
 [Kang Liao](https://kangliao929.github.io/), [Chunyu Lin](http://faculty.bjtu.edu.cn/8549/), [Yao Zhao](http://mepro.bjtu.edu.cn/zhaoyao/e_index.htm)
+![](https://github.com/KangLiao929/OrdinalDistortion/blob/main/assets/ordinal_distortion.png) 
 > ### Problem
 > Given a radial distortion image capture by wide-angle lens, this work aims to predict the ordinal distortion and rectify the distortion.
 >  ### Features
