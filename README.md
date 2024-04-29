@@ -1,6 +1,7 @@
 # A Deep Ordinal Distortion Estimation Approach for Distortion Rectification
 ## Introduction
 This is the official implementation for [OrdinalDistortion](https://arxiv.org/abs/2007.10689) (IEEE TIP'21).
+
 [Kang Liao](https://kangliao929.github.io/), [Chunyu Lin](http://faculty.bjtu.edu.cn/8549/), [Yao Zhao](http://mepro.bjtu.edu.cn/zhaoyao/e_index.htm)
 > ### Problem
 > Given a radial distortion image capture by wide-angle lens, this work aims to predict the ordinal distortion and rectify the distortion.
@@ -9,7 +10,7 @@ This is the official implementation for [OrdinalDistortion](https://arxiv.org/ab
 >  * Ordinal distortion is homogeneous as all its elements share a similar magnitude and description, compared with the heterogeneous distortion parameter
 >  * Ordinal distortion can be estimated using only a part of a wide-angle image, enabling higher efficiency of rectification algorithms
 
-![](https://github.com/KangLiao929/DR-GAN/blob/main/assets/method_comparison.png) 
+![](https://github.com/KangLiao929/OrdinalDistortion/blob/main/assets/method_comparison.png) 
 
 ## Requirements
 - Python 3.5.6 (or higher)
@@ -29,7 +30,7 @@ cd OrdinalDistortion/
 
 ## Getting Started & Testing
 
-- Download the pretrained models through the following links ([model]()), and put them into `weights/`. 
+- Download the pretrained models through the following links ([GoogleDrive]()), and put them into `weights/`. 
 - To test images in a folder, you can call `test.py` with the opinion `--test_path` and `--load_models`. For example:
 
   ```bash
@@ -55,6 +56,7 @@ The visual evaluations will be saved in the folder `./dataset/pre/`.
 ## Citation
 
 If our solution and open questions are useful for your research, please consider citing:
+
     @article{liao2021deep,
       title={A Deep Ordinal Distortion Estimation Approach for Distortion Rectification},
       author={Liao, Kang and Lin, Chunyu and Zhao, Yao},
