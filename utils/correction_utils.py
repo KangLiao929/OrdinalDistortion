@@ -64,7 +64,6 @@ def correct(srcImg, dp, w=256, h=256, blank_color=255):
     w_roi = end_point - start_point
     offset = start_point
     factor = w_roi / w
-    print(w_roi, offset, factor)
 
     '''backward warping'''
     gt_flag = np.zeros((w, h), np.uint8)
