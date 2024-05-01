@@ -1,0 +1,1 @@
+python test.py --test_num 50 --test_path "./imgs/*.jpg" --save_weights_path './weights/OrdinalDistortionNet.h5' --save_img_path "./results/"

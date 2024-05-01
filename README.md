@@ -56,7 +56,7 @@ The visual evaluations will be saved in the folder `./dataset/pre/`.
 
 ## Citation
 
-If our solution and open questions are useful for your research, please consider citing:
+If our solution is useful for your research, please consider citing:
 
     @article{liao2021deep,
       title={A Deep Ordinal Distortion Estimation Approach for Distortion Rectification},

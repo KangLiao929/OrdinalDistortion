@@ -1,0 +1,1 @@
+python train.py --train_num 20000 --test_num 100 --train_path "./dataset/train/A/*.jpg" --test_path "./dataset/test/A/*.jpg" --save_weights_path "./weights/" 
