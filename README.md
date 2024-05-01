@@ -31,23 +31,23 @@ cd OrdinalDistortion/
 
 ## Getting Started & Testing
 
-- Download the pretrained models through the following links ([GoogleDrive]()), and put them into `weights/`. 
-- To test images in a folder, you can call `test.py` with the opinion `--test_path` and `--load_models`. For example:
+- Download the pretrained models through the following links ([GoogleDrive](https://drive.google.com/file/d/1E9-rvypayfCrYJCZL5qkIbCY-whCvzI7/view?usp=sharing)), and put them into `weights/`. 
+- To test images in a folder, you can call `test.py` with the opinion `--test_path`. For example:
 
   ```bash
-  python test.py --test_num 100 --test_path ./OrdinalDistortion/dataset/test/ --load_models ./OrdinalDistortion/weights/generator.h5 --write_path ./OrdinalDistortion/dataset/pre/
+  python test.py --test_num 50 --test_path "./imgs/*.jpg" --save_weights_path './weights/OrdinalDistortionNet.h5' --save_img_path "./results/"
   ```
   or write / modify `test.sh` according to your own needs, then execute this script as (Linux platform):  
   ```bash
   sh ./test.sh
   ```
-The visual evaluations will be saved in the folder `./dataset/pre/`.
+The visual evaluations will be saved in the folder `./results/`.
 
 ## Training
-- Generate the training dataset or download our synthesized dataset into the path `dataset/train/`.
+- Generate the training dataset into the path `dataset/train/`.
 - To train OrdinalDistortionNet, you can call `train.py` with the opinion `--train_path`. For example:
   ```shell
-  python train.py --train_path ./OrdinalDistortion/dataset/train/ --batch_size 128 --gpu "0"
+  python train.py --train_num 20000 --train_path "./dataset/train/A/*.jpg" --save_weights_path "./weights/" 
   ```
   or write / modify `train.sh` according to your own needs, then execute this script as:  
   ```bash
